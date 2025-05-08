@@ -52,4 +52,9 @@ step2: Select SystemVerilog + Icarus Verilog.
 step3: Paste alu.v and tb_alu.v code.
 step4: Click Run and see the output.
 
-Happy Learning!
+**Waveform**
+![image](https://github.com/user-attachments/assets/f04fec5f-72d3-4c82-89f4-8f5af89e404c)
+
+In this waveform, we are simulating an ALU where the signals include two 4-bit inputs A and B, a 3-bit control signal called opcode, and a 4-bit output called result. At the highlighted time of 6.727 ns, the input A has a value of 5, B has a value of 3, the opcode is 0, and the result shows 8. This suggests that when opcode is 0, your ALU is performing addition, because 5 plus 3 equals 8, which matches the displayed result. As you move through the waveform, you can see that the opcode changes from 0 to 1, 2, 3, and so on, and the result also updates accordingly. For example, when opcode is 1, the result is 2, which matches the subtraction operation (5 minus 3 equals 2). When opcode is 2, the result is 1, matching the bitwise AND of 5 and 3. Similarly, when opcode is 3, the result is 7, matching the bitwise OR operation. Opcode 4 shows 6, which is the XOR result of 5 and 3. After opcode 4, the results for opcode 5 and 6 change to 10 (displayed as a in hexadecimal) and 2, indicating that these might be custom operations like shift or increment, which you can verify based on your design. Overall, the numbers in the waveform represent decimal values, and up to opcode 4, your ALU output matches standard arithmetic and logic operations correctly.
+
+*Happy Learning!*
